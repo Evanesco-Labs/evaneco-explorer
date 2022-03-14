@@ -602,4 +602,9 @@ defmodule EthereumJSONRPC.Block do
   defp entry_to_elixir({"l1BlockNumber", _}) do
     {:ignore, :ignore}
   end
+
+  # EVA best lottery fields
+  defp entry_to_elixir({"best_lottery", _}) do
+    {:ignore, :ignore}
+  end
 end
